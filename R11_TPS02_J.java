@@ -1,5 +1,5 @@
 public class R11_TPS02_J {
-    private static boolean flag = false;
+     private static volatile boolean flag = false;
 
     public static void main(String[] args) {
         new Thread(new Task()).start();
