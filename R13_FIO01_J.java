@@ -1,6 +1,8 @@
 public class R13_FIO01_J {
-    public static void main(String[] args) throws IOException {
+   public static void main(String[] args) throws IOException {
         File file = new File("someFile.txt");
-        file.delete();
+        if (!file.delete()) {
+            // Handle failure to delete the file
+        }
     }
 }
