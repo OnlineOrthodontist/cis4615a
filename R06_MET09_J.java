@@ -1,10 +1,10 @@
 public class R06_MET09_J {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
         list.add("element");
     }
 
-    public static void addToList(List list, Object obj) {
-        list.add(obj);
+    public static void addToList(List<?> list, Object obj) {
+        // Validate or check type before adding
     }
 }
